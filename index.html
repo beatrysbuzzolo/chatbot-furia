@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot FURIA</title>
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="icon" type="image/png" href="src/assets/images/furia-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main role="main" class="container">
+        <section class="chat-container" aria-label="Área de conversação">
+            <div class="chat-messages" 
+                 id="chat-messages"
+                 role="log"
+                 aria-live="polite"
+                 aria-relevant="additions">
+                
+            </div>
+            <div id="typing-indicator" class="hidden">
+                <div class="typing-dots">
+                    <span>Digitando</span>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+            <div class="chat-input" role="form" aria-label="Área de envio de mensagens">
+                <input type="text" 
+                       id="user-input"
+                       placeholder="Digite sua mensagem"
+                       aria-label="Campo de entrada de mensagem"
+                       autocomplete="off">
+                <button id="btn-send" 
+                        class="btn-primary"
+                        aria-label="Enviar mensagem">
+                    🚀 Enviar
+                </button>
+            </div>
+
+            <nav class="extra-options" aria-label="Controles adicionais">
+        <div class="menu-container">
+            <button id="menu-button" class="dots-menu">⋮</button>
+        
+            <div id="menu-options" class="menu-hidden">
+                <button class="menu-item" data-action="commands">📋 Comandos</button>
+                <button class="menu-item" data-action="change-name">👤 Alterar Perfil </button>
+                <button class="menu-item" data-action="new-chat">✨ Novo Chat</button>
+                <button class="menu-item" data-action="about">ℹ️ Sobre o Chat</button>
+            </div>
+        </div>
+            </nav>
+
+        <dialog id="modal-profile" 
+                aria-labelledby="modal-titulo"
+                aria-modal="true"
+                >
+            <article class="modal-content">
+                <div class="modal-header">
+                    <h1 id="modal-titulo">Como devemos te chamar?</h1>
+                    <button class="close-modal-btn">&times;</button>
+                </div>
+                <form id="form-profile">
+                    <input type="text" 
+                           id="new-name"
+                           placeholder="Digite seu novo nome"
+                           aria-label="Novo nome de usuário"
+                           maxlength="20"
+                           required>
+                    <div class="modal-actions">
+                        <button type="submit" 
+                                id="btn-salve-name"
+                                class="btn-primary">
+                            💾 Salvar
+                        </button>
+                        <button type="button" 
+                        id="btn-delete-profile"
+                        class="btn-danger"
+                        aria-label="Apagar perfil">
+                    🗑️ Apagar Perfil
+                </button>
+                    </div>
+                </form>
+            </article>
+        </dialog>
+    </main>
+
+    <script type="module" src="main.js"></script>
+    
+    <footer>
+        <p>Chatbot FURIA &copy; 2025 - v1.0 | BB </p>
+    </footer>
+</body>
+
+</html> 
