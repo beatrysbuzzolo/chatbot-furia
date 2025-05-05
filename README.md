@@ -2,8 +2,7 @@
 Aplicação web desenvolvida como parte do desafio técnico para a vaga de Assistente de Engenharia de Software na FURIA. A proposta é entregar uma landing page interativa e funcional, com foco em experiência conversacional via chatbot dedicado ao time de CS2 da organização.
 
 # Config
-As informações utilizadas neste projeto foram extraídas do site HLTV, o maior portal de CS2 do mundo. A princípio, a API do HLTV seria utilizada para obter dados em tempo real, porém, devido a fatores externos, essa integração não foi possível.
-
+As informações utilizadas neste projeto foram extraídas do site HLTV, o maior portal de CS2 do mundo. A princípio, a API do [HLTV](https://www.hltv.org/) seria utilizada para obter dados em tempo real, porém, devido a fatores externos, essa integração não foi possível.
 
 # Development Roadmap
 - [x] [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
@@ -11,7 +10,6 @@ As informações utilizadas neste projeto foram extraídas do site HLTV, o maior
 - [x] [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [x] [Acessibilidade-Web(WAI-ARIA)](https://developer.mozilla.org/pt-BR/docs/Web/Accessibility/ARIA)
 - [x] Padrão MVC (Model-View-Controller)
-
 
 # Features
 - [x] Chatbot FURIA
@@ -21,6 +19,8 @@ As informações utilizadas neste projeto foram extraídas do site HLTV, o maior
 - [x] Referência do Contato Inteligente 
 - [x] Menu de comandos interativo
  
+# Screenshot
+<br>![exemplo](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTExcnp4d3FxdnphazBhMzBqNjhtazN0cDBhaTl3YjEyOGYwbnR6aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/AtBktQbtW4dI0mLt46/giphy.gif)
 
 # TO DO
 Este projeto está em andamento, sendo necessário adicionar:

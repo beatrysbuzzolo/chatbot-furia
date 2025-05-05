@@ -33,7 +33,7 @@ export class StringPatterns {
         "🎮 Acompanhe todos os jogos da FURIA aqui ou direto na Twitch Twitch.tv/FURIAtv!"
     ];
 
-    static TOURNAMENTS_PATTERN = ["campeonatos", "torneios", "eventos futuros", "torneio"];
+    static TOURNAMENTS_PATTERN = ["campeonatos", "campeonato", "torneios", "eventos futuros", "torneio"];
     static TOURNAMENTS_RESPONSES = [
         "📌 Próximo grande torneio: PGL Astana 2025. Vamos torcer juntos!",
         "🌍 Além da PGL Astana, a FURIA ainda joga a IEM Dallas e o mais aguardado: BLAST.tv Austin Major 2025 Stage 2"
@@ -48,7 +48,7 @@ export class StringPatterns {
         "🚨 Fique ligado! FURIA volta aos servidores contra The MongolZ no dia 10/05 às 05h00 (BR)."
     ];
 
-    static LIVE_STATUS_PATTERN = ["status do jogo", "como tá o jogo", "placar", "tempo real"];
+    static LIVE_STATUS_PATTERN = ["status do jogo", "tem jogo agora", "como ta o jogo", "placar", "tempo real", "ao vivo"];
     static LIVE_STATUS_RESPONSES = [
         "🎮 Ainda não temos um jogo ao vivo agora, mas fica ligado nas redes da FURIA para acompanhar tudo em tempo real!",
         "⏱️ Status: Aguardando início da próxima partida vs The MongolZ - 10/05 às 05h00.",
@@ -64,19 +64,19 @@ export class StringPatterns {
 
     static COMMANDS_PATTERN = ["comandos", "ajuda", "opções", "comando"];
     static COMMANDS_RESPONSES = [
-            `🐆 <strong>COMANDOS DISPONÍVEIS</strong> 🐆<br>
-                📣 <strong>Saudações</strong> → digite "oi", "eae", "bom dia", "olá", etc.<br>
-                🎯 <strong>FURIA e CS2</strong> → digite "furia", "cs2", "e-sports", "major"<br>
-                💻 <strong>Elenco da FURIA</strong> → digite "jogadores", "elenco", "roster", "time"<br>
-                📅 <strong>Próxima Partida</strong> → digite "próxima partida", "quando é o jogo", "calendário"<br>
-                🗓️ <strong>Jogos e Agenda</strong> → digite "jogos", "partidas", "compromissos"<br>
-                🏆 <strong>Campeonatos</strong> → digite "campeonatos", "torneios", "eventos futuros"<br>
-                📱 <strong>Redes Sociais</strong> → digite "instagram", "twitter", "twitch", "redes sociais"<br>
-                📣 <strong>Torcida</strong> → digite "torcida", "canta comigo", "gritos", "bora furia"<br>
-                🔥 <strong>Status ao Vivo</strong> → digite "status do jogo", "placar", "tempo real"<br>
-                📞 <strong>Contato</strong> → digite "contato", "saber mais", "mais informações"<br>
-                🤖 <strong>Sobre o Bot</strong> → digite "sobre", "quem é você", "chatbot"<br>
-                👤 <strong>Seu Nome</strong> → digite <code>/name SeuNome</code> (para alterar seu nome no chat)<br>
+            `🐆 <strong>PALAVRAS-CHAVE DISPONÍVEIS</strong> 🐆<br>
+                📣 <strong>Saudações</strong> →  "oi", "eae", "bom dia", "olá", etc.<br>
+                🎯 <strong>FURIA e CS2</strong> →  "furia", "cs2", "e-sports", "major"<br>
+                💻 <strong>Elenco da FURIA</strong> →  "jogadores", "elenco", "roster", "time"<br>
+                📅 <strong>Próxima Partida</strong> → "próxima partida", "quando é o jogo", "calendário"<br>
+                🗓️ <strong>Jogos e Agenda</strong> → "jogos", "partidas", "compromissos"<br>
+                🏆 <strong>Campeonatos</strong> → "campeonatos", "torneios", "eventos futuros"<br>
+                📱 <strong>Redes Sociais</strong> → "instagram", "twitter", "twitch", "redes sociais"<br>
+                📣 <strong>Torcida</strong> → "torcida", "canta comigo", "gritos", "bora furia"<br>
+                🔥 <strong>Status ao Vivo</strong> → "status do jogo", "placar", "tempo real", "ao vivo"<br>
+                📞 <strong>Contato</strong> → "contato", "saber mais", "mais informações"<br>
+                🤖 <strong>Sobre o Bot</strong> → "sobre", "quem é você", "chatbot"<br>
+                👤 <strong>Seu Nome</strong> → <code>/name SeuNome</code> (para alterar seu nome no chat)<br>
                 `
     ];
 
@@ -92,8 +92,8 @@ export class StringPatterns {
     ];
 
     static DEFAULT_RESPONSES = [
-        `Acho que você devia tentar algo diferente, {name}. Quer saber o que eu posso responder? digite "comandos".`,
-        `Aposto que essa é uma ótima pergunta, {name}, mas ainda não consigo responder sobre isso. Digite "comandos" para descobrir o que posso responder.`,
-        `Parece que você tentou algo diferente, {name}. 🤔 Que tal tentar um dos comandos disponíveis? Digite "comandos" para saber o que posso responder!`
+        `Acho que você devia tentar algo diferente, {name}. Quer saber o que eu posso responder? "comandos".`,
+        `Aposto que essa é uma ótima pergunta, {name}, mas ainda não consigo responder sobre isso. "comandos" para descobrir o que posso responder.`,
+        `Parece que você tentou algo diferente, {name}. 🤔 Que tal tentar um dos comandos disponíveis? "comandos" para saber o que posso responder!`
     ];
 }

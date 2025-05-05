@@ -92,15 +92,19 @@ export class ChatController {
         switch (action) {
             case 'commands': 
                 this.addSystemMessage(SP.COMMANDS_RESPONSES); 
+                this.view.toggleMenu(false);
                 break;
             case 'change-name': 
-                this.openProfileModal(); 
+                this.openProfileModal();
+                this.view.toggleMenu(false);
                 break;
             case 'about': 
                 this.addSystemMessage(SP.ABOUT_RESPONSES); 
+                this.view.toggleMenu(false);
                 break;
             case 'new-chat': 
                 this.resetChat(); 
+                this.view.toggleMenu(false);
                 break;
         }
     }

@@ -33,6 +33,7 @@ export class ChatView {
             if (!e.target.closest('.menu-item')) return;
             const action = e.target.closest('.menu-item').dataset.action;
             this.controller.handleMenuAction(action);
+            
         });
 
         document.addEventListener('click', (e) => {
